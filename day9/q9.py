@@ -11,7 +11,7 @@ notStart = lambda c : c != '('
 notEnd = lambda c : c != ')'
 
 def question1():
-
+    
     decompressedLength = 0
 
     with open('q9Input.txt', 'r') as f:
@@ -43,8 +43,7 @@ def question1():
 def question2(inputData):
 
     decompressedLength = 0
-
-
+    
     try:
         while True:
 
@@ -65,11 +64,12 @@ def question2(inputData):
 
 if __name__ == "__main__":
 
+    print(question1())
+    
     with open('q9Input.txt', 'r') as f:
     # no need to read each line individually
     # create an iterator of the data so we can track where we are
     # as we read through it
         inputData = iter(''.join([l.strip() for l in f.readlines()]))
 
-    print(question1())
     print(question2(inputData))
