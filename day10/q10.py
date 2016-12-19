@@ -125,7 +125,7 @@ def question2():
 
             done.append(line)
 
-    return outputs[0].pop() * outputs[1].pop() * outputs[2].pop()
+    return outputs[0][0] * outputs[1][0] * outputs[2][0]
 
 
 if __name__ == "__main__":
