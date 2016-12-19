@@ -1,6 +1,5 @@
 import re
 from itertools import *
-from sys import stdin
 from collections import defaultdict
 
 
